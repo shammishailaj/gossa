@@ -14,13 +14,14 @@ a [simple UI](https://github.com/pldubouilh/gossa-ui) comes as default, featurin
 
   * 🔍 files/directories browser
   * 📩 drag-and-drop file/directory uploader
+  * 🚀 lightweight, default ui weights 110kB and prints in ms
   * 🗺️ files handling - move/rename/delete
   * 📸 picture browser
   * 📽️ video streaming
   * ✍️ simple text editor
   * ⌨️ keyboard shortcuts
-  * 🥂 speed - will easily fill available bandwidth
-  * 🔒 safe - easy/secure multi account setup
+  * 🥂 fast golang static server, easily fills available bandwidth
+  * 🔒 easy/secure multi account setup
 
 ### build
 built blobs are available on the [release page](https://github.com/pldubouilh/gossa/releases) - or simply `make build` this repo.
@@ -40,7 +41,7 @@ release images are pushed to [dockerhub](https://hub.docker.com/r/pldubouilh/gos
 % sudo docker run -v ~/LocalDirToShare:/shared -p 8001:8001 pldubouilh/gossa
 ```
 
-in a do-one-thing-well mindset, HTTPS and authentication has been left to middlewares and proxies. for instance [caddy](https://caddyserver.com/) handles this very well - have a look at this small [caddy config](https://github.com/pldubouilh/gossa/blob/master/support/Caddyfile) with authentication and option for HTTPS that works along with gossa.
+in a do-one-thing-well mindset, HTTPS and authentication has been left to middlewares and proxies. [sample caddy configs](https://github.com/pldubouilh/gossa/blob/master/support/) are available to quickly setup multi users setups along with https.
 
 ### shortcuts
 the default UI is fully usable by through keyboard/UI shortcuts - press `Ctrl/Cmd + h` to see them all.
